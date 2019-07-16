@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Иван Фомин](https://up.htmlacademy.ru/adaptive/17/user/1037067).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Кошара] (https://htmlacademy.ru/profile/rednaxxxela).
 
 ---
 
