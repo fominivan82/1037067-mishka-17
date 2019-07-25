@@ -7,139 +7,146 @@
 </head>
 
 <body>
-  <header class="heading">
-    <nav class="heading__navigation">
-      <div class="heading__menu">
-        <a href="index.html" class="heading__logo">
-          <img class="heading__logo-image" src="#" width="" height="" alt="Логотип Мишка">
+  <header class="page-header">
+    <nav class="main-nav page-header__nav">
+      <div class="main-nav__top">
+        <a href="index.html" class="main-nav__logo logo">
+          <img class="logo__image" src="#" width="" height="" alt="Логотип Мишка">
         </a>
-        <button class="heading__button" type="button" aria-label="Выпадающее меню"></button>
+        <button class="main-nav__button" type="button" aria-label="Выпадающее меню"></button>
       </div>
-      <ul class="heading__submenu main-nav">
-        <li class="heading__item main-nav__cell">
-          <a class="main-nav__cell-module" href=#>Каталог товаров</a>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__module" href=#>Каталог товаров</a>
         </li >
-        <li class="heading__item main-nav__cell">
-          <a class="main-nav__cell-module" href="form.html">Вязание на заказ</a>
+        <li class="site-list__item">
+          <a class="site-list__module" href="form.html">Вязание на заказ</a>
         </li>
-        <li class="heading__item main-nav__cell">
-          <a class="main-nav__cell-module" href="#"><img src="#" width="" height="" alt="Поиск">Поиск по сайту</a>
+        <li class="site-list__item">
+          <a class="site-list__module" href="#"><img src="#" width="" height="" alt="Поиск">Поиск по сайту</a>
         </li>
-        <li class="heading__item main-nav__cell">
-          <a class="main-nav__cell-module" href="#"><img src="#" width="" height="" alt="Корзина">Корзина: пока пуста</a>
+        <li class="site-list__item">
+          <a class="site-list__module" href="#"><img src="#" width="" height="" alt="Корзина">Корзина: пока пуста</a>
         </li>
       </ul>
     </nav>
   </header>
   <main class="catalog">
-    <h1 class="catalog__launch">Каталог товаров</h1>
-    <ul class="catalog__list">
-      <li class="catalog__part item-card">
-        <p class="item-card__image">
-          <img src="#" width="" height="" alt="Зайчик-попрыгайчик">
-        </p>
-        <h3 class="item-card__addition">Зайчик-попрыгайчик</h3>
-        <table class="item-card__table table">
-          <tr class="item-card__labels table__labels">
-            <th class="item-card__label">Рост:</th>
-            <th class="item-card__label">вес:</th>
-          </tr>
-          <tr class="item-card__values table__values">
-            <td class="item-card__value">30&nbsp;см,</td>
-            <td class="item-card__value">200&nbsp;г</td>
-          </tr>
-        </table>
-        <div class="item-card__ending">
-          <p class="item-card__price">1200 руб.</p>
-          <img class="item-card__cart" src="#" width="" height="" alt="Корзина">
-        </div>
-      </li>
-      <li class="catalog__part item-card">
-        <p class="item-card__image">
-          <img src="#" width="" height="" alt="Корзинка для белья">
-        </p>
-        <h3 class="item-card__addition">Корзинка для белья</h3>
-        <table class="item-card__table table">
-          <tr class="item-card__labels table__labels">
-            <th class="item-card__label">Диаметр:</th>
-            <th class="item-card__label">высота:</th>
-          </tr>
-          <tr class="item-card__values table__values">
-            <td class="item-card__value">15&nbsp;см,</td>
-            <td class="item-card__value">10&nbsp;см</td>
-          </tr>
-        </table>
-        <div class="item-card__ending">
-          <p class="item-card__price">690 руб.</p>
-          <img class="item-card__cart" src="#" width="" height="" alt="Корзина">
-        </div>
-      </li>
-      <li class="catalog__part item-card">
-        <p class="item-card__image">
-          <img src="#" width="" height="" alt="Большая корзина для игрушек">
-        </p>
-        <h3 class="item-card__addition">Большая корзина для игрушек</h3>
-        <table class="item-card__table table">
-          <tr class="item-card__labels table__labels">
-            <th class="item-card__label">Диаметр:</th>
-            <th class="item-card__label">высота:</th>
-          </tr>
-          <tr class="item-card__values table__values">
-            <td class="item-card__value">30&nbsp;см,</td>
-            <td class="item-card__value">30&nbsp;см</td>
-          </tr>
-        </table>
-        <div class="item-card__ending">
-          <p class="item-card__price">1500 руб.</p>
-          <img class="item-card__cart" src="#" width="" height="" alt="Корзина">
-        </div>
-      </li>
-    </ul>
+    <h1 class="page-title">Каталог товаров</h1>
+    <section class="goods catalog__list">
+      <ul class="goods__list">
+        <li class="goods__demo">
+          <article class="card goods__part">
+            <p class="card__wrap">
+              <img class="card__image" src="#" width="" height="" alt="Зайчик-попрыгайчик">
+            </p>
+            <h3 class="title">Зайчик-попрыгайчик</h3>
+            <table class="card__table">
+              <tr class="card__labels">
+                <th class="card__label">Рост:</th>
+                <th class="card__label">Вес:</th>
+              </tr>
+              <tr class="card__values">
+                <td class="card__value">30&nbsp;см,</td>
+                <td class="card__value">200&nbsp;г</td>
+              </tr>
+            </table>
+            <div class="card__ending">
+              <p class="card__price">1200 руб.</p>
+            </div>
+          </article>
+        </li>
+        <li class="goods__demo">
+          <article class="card goods__part">
+            <p class="card__wrap">
+              <img class="card__image" src="#" width="" height="" alt="Корзинка для белья">
+            </p>
+            <h3 class="title">Корзинка для белья</h3>
+            <table class="card__table">
+              <tr class="card__labels">
+                <th class="card__label">Диаметр:</th>
+                <th class="card__label">Высота:</th>
+              </tr>
+              <tr class="card__values">
+                <td class="card__value">15&nbsp;см,</td>
+                <td class="card__value">10&nbsp;см</td>
+              </tr>
+            </table>
+            <div class="card__ending">
+              <p class="card__price">690 руб.</p>
+            </div>
+          </article>
+        </li>
+        <li class="goods__demo">
+          <article class="card goods__part">
+            <p class="card__wrap">
+              <img class="card__image" src="#" width="" height="" alt="Большая корзина для игрушек">
+            </p>
+            <h3 class="title">Большая корзина для игрушек</h3>
+            <table class="card__table">
+              <tr class="card__labels">
+                <th class="card__label">Диаметр:</th>
+                <th class="card__label">Высота:</th>
+              </tr>
+              <tr class="card__values">
+                <td class="card__value">30&nbsp;см,</td>
+                <td class="card__value">30&nbsp;см</td>
+              </tr>
+            </table>
+            <div class="card__ending">
+              <p class="card__price">1500 руб.</p>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </section>
   </main><!--Процесс производства пока не верстается-->
-  <footer class="basement">
-    <ul class="basement__social social">
+  <footer class="page-footer">
+    <ul class="page-footer__social social">
       <li>
-        <a class="basement__social-button social__button" href="#"><span class="visually-hidden">Фейсбук</span></a>
+        <a class="social__link" href="#"><span class="visually-hidden">Фейсбук</span></a>
       </li>
       <li>
-        <a class="basement__social-button social__button" href="#"><span class="visually-hidden">Инстаграм</span></a>
+        <a class="social__link" href="#"><span class="visually-hidden">Инстаграм</span></a>
       </li>
       <li>
-        <a class="basement__social-button social__button" href="#"><span class="visually-hidden">Твиттер</span></a>
+        <a class="social__link" href="#"><span class="visually-hidden">Твиттер</span></a>
       </li>
     </ul>
-    <a class="basement__logo-html" href="https://htmlacademy.ru/intensive/adaptive">
-      <img src="" width="27" height="35" alt="Логотип HTMLAcademy" aria-label="Логотип HTMLAcademy">
+    <a class="coopyright coopyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <img class="coopyright__img" src="" width="27" height="35" alt="Логотип HTMLAcademy" aria-label="Логотип HTMLAcademy">
     </a>
   </footer>
   <section class="cart-modal">
-    <h2 class="cart-modal__sequel">Добавить в корзину</h2>
-    <form class="cart-modal__checkpoint" method="get" action="https://echo.htmlacademy.ru">
-      <fieldset>
-        <legend class="cart-modal__legend">Выберите размер:</legend>
-        <ul class="cart-modal__snap">
-          <li class="cart-modal__item choice">
-            <label>
-              <input class="choice__check visually-hidden" type="checkbox" name="s" checked>
-              <span class="choice__value">S</span>
-            </label>
-          </li>
-          <li class="cart-modal__item choice">
-            <label>
-              <input class="choice__check visually-hidden" type="checkbox" name="m">
-              <span class="choice__value">M</span>
-            </label>
-          </li>
-          <li class="cart-modal__item choice">
-            <label>
-              <input class="choice__check visually-hidden" type="checkbox" name="l">
-              <span class="choice__value">L</span>
-            </label>
-          </li>
-        </ul>
-      </fieldset>
-      <button class="cart-modal__button button button--modal" type="submit"><span>Добавить</span></button>
-    </form>
+    <div class="order">
+      <h2 class="order__title">Добавить в корзину</h2>
+      <form class="order__checkpoint" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend class="order__legend">Выберите размер:</legend>
+          <ul class="order__snap">
+            <li class="order__item choice">
+              <label>
+                <input class="choice__check visually-hidden" type="checkbox" name="s" checked>
+                <span class="choice__value">S</span>
+              </label>
+            </li>
+            <li class="order__item choice">
+              <label>
+                <input class="choice__check visually-hidden" type="checkbox" name="m">
+                <span class="choice__value">M</span>
+              </label>
+            </li>
+            <li class="order__item choice">
+              <label>
+                <input class="choice__check visually-hidden" type="checkbox" name="l">
+                <span class="choice__value">L</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="order__button button button--modal" type="submit"><span>Добавить</span></button>
+      </form>
+    </div>
   </section>
 </body>
 
