@@ -4,42 +4,53 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="page-header conteiner">
     <nav class="main-nav page-header__nav">
       <div class="main-nav__top">
         <a class="main-nav__logo logo">
-          <img class="logo__image" src="#" width="" height="" alt="Логотип Мишка">
+          <img class="logo__image" src="img/mishka-logo-mobile.png" width="86" height="35" alt="Логотип Мишка">
         </a>
         <button class="main-nav__button" type="button" aria-label="Выпадающее меню"></button>
       </div>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a class="site-list__module" href=#>Каталог товаров</a>
+          <a class="site-list__module-1" href="catalog.html"><span class="site-list__text">Каталог товаров</span></a>
         </li >
         <li class="site-list__item">
-          <a class="site-list__module" href="form.html">Вязание на заказ</a>
+          <a class="site-list__module-2" href="form.html"><span class="site-list__text">Вязание на заказ</span></a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__module" href="#"><img src="#" width="" height="" alt="Поиск">Поиск по сайту</a>
+          <a class="site-list__module-3" href="#">
+            <img class="site-list__image-1" src="img/search.png" width="18" height="18" alt="Поиск">
+            <img class="site-list__image-1--blue" src="img/search_blue.png" width="18" height="18" alt="Поиск">
+            <span class="site-list__text">Поиск по сайту</span>
+          </a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__module" href="#"><img src="#" width="" height="" alt="Корзина">Корзина: пока пуста</a>
+          <a class="site-list__module-4" href="#">
+            <img class="site-list__image-2" src="img/cart.png" width="21" height="18" alt="Корзина">
+            <img class="site-list__image-2--blue" src="img/cart-blue.png" width="21" height="18" alt="Корзина">
+            <span class="site-list__text">Корзина: пока пуста</span>
+          </a>
         </li>
       </ul>
     </nav>
   </header>
-  <main class="main">
+  <main class="main conteiner">
     <section class="shop">
-      <h1 class="shop__title">Милые штуки ручной работы для дома</h1>
+      <div class="shop__wrap">
+        <h1 class="shop__title">Милые штуки ручной<br>работы для дома</h1>
+      </div>
       <ul class="shop__menu">
         <li class="shop__item">
-          <a class="shop__link" href="#"><img src="#" width="" height="" alt="Лампа">Предметы интерьера</a>
+          <a class="shop__link-1" href="#"><img src="img/interior.png" width="40" height="62" alt="Лампа"><span class="shop__text">Предметы интерьера</span></a>
         </li>
         <li class="shop__item">
-          <a class="shop__link" href="#"><img src="#" width="" height="" alt="Конструктор">Детские игрушки</a>
+          <a class="shop__link-2" href="#"><img src="img/toy-svg.png" width="60" height="60" alt="Конструктор"><span class="shop__text">Детские игрушки</span></a>
         </li>
       </ul>
     </section>
@@ -54,58 +65,86 @@
           <th class="ware__label">Высота:</th>
         </tr>
         <tr class="ware__values">
-          <td class="ware__value">«Тиффани»/серый</td>
-          <td class="ware__value">25&nbsp;см</td>
-          <td class="ware__value">15&nbsp;см</td>
+          <td data-label="Цвет:" class="ware__value">«Тиффани»/серый</td>
+          <td data-label="Диаметр:" class="ware__value">25&nbsp;см</td>
+          <td data-label="Высота:" class="ware__value">15&nbsp;см</td>
         </tr>
       </table>
-      <img class="ware__image" src="#" width="" height="" alt="Вязаные корзинки">
-      <p class="ware__price">990 руб.</p>
-      <a href="#" class="ware__link">Заказать</button>
+      <img class="ware__image" src="img/triple-set-mobile.png" width="260" height="315" alt="Вязаные корзинки">
+      <p class="ware__price">Цена: 990 руб.</p>
+      <a href="#" class="ware__link"><span>Заказать</span></a>
     </section>
     <section class="about">
       <h2 class="about__title">Коротко о нас:</h2>
       <ul class="about__menu">
         <li class="about__item">
-          <p class="about__module"><img src="#" width="" height="" alt="Цветок">Экологически чистые материалы</p>
+          <img src="img/icon-1.png" width="32" height="37" alt="Цветок">
+          <p class="about__module">Экологически чистые материалы</p>
         </li>
         <li class="about__item">
-          <p class="about__module"><img src="#" width="" height="" alt="Прямоугольник">Скандинавский стиль по российской цене</p>
+          <img src="img/icon-3.png" width="47" height="27" alt="Прямоугольник">
+          <p class="about__module">Скандинавский стиль по российской цене</p>
         </li>
         <li class="about__item">
-          <p class="about__module"><img src="#" width="" height="" alt="Сердце">Увеличивает лайки на фотографиях</p>
+          <img src="img/icon-5.png" width="34" height="27" alt="Сердце">
+          <p class="about__module">Увеличивает лайки на фотографиях</p>
         </li>
         <li class="about__item">
-          <p class="about__module"><img src="#" width="" height="" alt="Клубок">Связано вручную с любовью и умилением</p>
+          <img src="img/icon-2.png" width="35" height="34" alt="Клубок">
+          <p class="about__module">Связано вручную с любовью и умилением</p>
         </li>
         <li class="about__item">
-          <p class="about__module"><img src="#" width="" height="" alt="Ракета">Поддержка отечественного производителя</p>
+          <img src="img/icon-4.png" width="55" height="23" alt="Ракета">
+          <p class="about__module">Поддержка отечественного производителя</p>
         </li>
         <li class="about__item">
-          <p class="about__module"><img src="#" width="" height="" alt="Коробка">Поставляется в подарочной упаковке</p>
+          <img src="img/icon-6.png" width="33" height="32" alt="Коробка">
+          <p class="about__module">Поставляется в подарочной упаковке</p>
         </li>
       </ul>
     </section><!--Отзывы и контакты пока не верстать-->
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer conteiner">
     <ul class="page-footer__social social">
       <li>
-        <a class="social__link" href="#"><span class="visually-hidden">Фейсбук</span></a>
+        <a class="social__link" href="#"><span class="visually-hidden">Инстаграм</span>
+          <svg class="social__insta" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="21" viewBox="0 0 22 21">
+            <image id="insta.svg" width="22" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAVCAYAAABCIB6VAAAB40lEQVQ4jZVV0VHDMAxVc/3HGyiXBRo2CBNQJmg7QWGCXicoTECYoHSDdAIyQS6egHQCOOWecqpIC+jOtSJbz/KTrE4y5iURrYkop3GpLti9HPHdEVE5JaJXt0GACug19AqOTERz2ANAUozCgiQGQOXN6C+YbTR32CNj624kektEMwUOZrEzeov5hojeiShivUUwGi05n1SBbZQ2euX9BMAKQGLfwRY8qCiSvC9zeoBzDr2G3procwdmRfdXUxhTE6l33CJpeuWSiB4ddeo7+Clw28R4p8aMWRw3oGjjDgrmyhrhUxNjDV9hIE+wydfwApTsHGiNqriFnyZ67fxDYrizkl+wH5oYOxluvfAbE2/ImHXTaQR4kTHPDSUqvuR64CMAPR1jT1kA9sqjv5UJ6iziSyV0TfRFalUMB/2gwiwWvzSgGkkWOchPE+MZ8Ay6XDHHYokyO0K3z7xDbWuDkvnZnzo1FPTdKmMOTYyrjDkCvEOf0Mgkyntw3JcfqkQ4HpJoqajRQgMyX6JehY4lxh5tM8X6AGroGyJWScFvwAEr0ZsYH67w7OUsYs2sNiABlT4sr24m18uYP/8ILO21F+luwtWH26D/IjLLgcqnvfaYaANrJ/KVMUt0Yhxr3P+ViogO37e6mYNEWwFxAAAAAElFTkSuQmCC"/>
+          </svg>
+          <svg class="social__insta--blue" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="21" viewBox="0 0 22 21">
+            <image id="insta.svg_copy" data-name="insta.svg copy" width="22" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAVCAYAAABCIB6VAAABxElEQVQ4jZ1V7U3DQAx9RPlPNiAbNExA+4e/wARtJyhMUHUCYALCArTdIJ2AjBAmIJ2g6EnPkWtd+bIUnWuf3z37fO7Z9e5tBmABoEJamhP2KDv97gHUOYCXsIFAY+mt9EaBFwBuZS8EUuobe5DMAZi8Ov1Zq2cz0R5+q5AR9Q7AyIAL5+yd3mk9B7AB8CF/JzLGFiGmNGDP0rO3uu8F2AiI9kfZighKJZfhxm16cfpUfq5X7jADWwe2lYA7Ay4d0yqwWOnSLOUawH0oncUOcQbc6lJMGLhUiZbhoMKl3IrIgwM/0JZp01GrKPVGdfSgRuBScXbRixBfZO7mY61S9q3A+uCPxIY+RmLTPuGb6oEgZFJGW+aaP/Zj6imX6oTDiayGsZCFoL+KkbKL61LACM7xDwOodX2+TQGPpK9derXabCfdP/NevW0DiutTPDV3BS/ci5trLixl2zhmU73UyrWfHTyU05ei1XMudPO1+pXlmOlby1fKPwnZDG2XO2OpMti8mEu/+6bOUY4Y280ShOwIyjnMV8f6c/PnL4E5XgfGrB9rSbHhYv8MrCPT56HvIe2UWB93/M+jQnY28v7Tz14aANsv6UV6zDztW7MAAAAASUVORK5CYII="/>
+          </svg>
+        </a>
       </li>
       <li>
-        <a class="social__link" href="#"><span class="visually-hidden">Инстаграм</span></a>
+        <a class="social__link" href="#"><span class="visually-hidden">Фейсбук</span>
+          <svg class="social__fb" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="28" viewBox="0 0 15 28">
+            <image id="fb.svg" width="15" height="28" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAcCAYAAAC+lOV/AAABjElEQVQ4jZ2Uu1HDQBCGf4MLOFVwGjWA3YFLUAc4JDMZIXYFQAUehUS4BJNBhFISI1VgqQKYFf/h9ephxjsj7ehuv31o926EDkm8nwBYAEgBOGNRAdgCWLXgxPs5gLVZ3lKLo0lwMjKgRHrh56N435Vl1RHgC0A8NusL6g2AJw2ylJSfsbwsHESMVoRu6bQBlGz64GJXljmjPai6X/nDcnn64Ix6Ri21L63RRRepDIse5/2wkvDDrvBbf8xSjmHZGIg0Y3vk+Ui8b8q5SLzfJ95/c2OOwx8OaVccDu28gcdq/HKVZsXaxThS2a0ZoIDpc0YHULqVvt4fc5pS1U9wQJY4zPq1AiWjBr7c1/Vz5FwN4J17UlseOXcTOfcJ4I6glPImGe7rujko9mBItHu1NGVGAk9DxCBDfS7MWbbnehCOGXHSZ3BqwjZdEf8DF7bGU7Aez0HwFJx2rA3CWsKldxacDex1wn8jeE7NWlIezXDxtfpt7zDpaxhPPaYirdotbAdCnGW7shR9LAB+AM4QdxpubgzBAAAAAElFTkSuQmCC"/>
+          </svg>
+          <svg class="social__fb--blue" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="28" viewBox="0 0 15 28">
+            <image id="fb.svg_copy" data-name="fb.svg copy" width="15" height="28" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAcCAYAAAC+lOV/AAABZklEQVQ4jZWUzVHDQAyFXzLcCR1sB6QDzIWzqQB3EHdAXAGhAsYNgDvArgB3gDsgHcAInjKKvLshmnHkWenTj6XN4m54RUTWADYASgArZ94D6AE0FxGwAvDiznrqFQNL0MLDpQF3Ep2ZvHwCCB7eUHcAnh2oGUWC/MTK1goavtcM+gsY6VLwBGBktifT98BqxDam4Ja6oJYqtt5pmYDVcUrYs7CKfrBr6sBWZnDIZCo4Hnk+tB2BvwB801DRuTZl77kcNvgB1vUb+UV7U644XwFY8OnN+dGcWwaA0bHyD/Yltwmc5zuf2gAVz6S1YGHJfE9nKf+G0S8BvHG+DzzT5Rg0qpa9o97SUTM3poJb305uzpO7y/5eZ+HAKtYph1Mb1sUy/geeMiOLwnY9s+ApuIycZWErR6t4LtxmbFFYd1fk7J6tSM+yabrPs3n7/zCZ6yPfVavMeveZ/UJIMLk4cpf19v0JgB+LrlBL+QntRwAAAABJRU5ErkJggg=="/>
+          </svg>
+        </a>
       </li>
       <li>
-        <a class="social__link" href="#"><span class="visually-hidden">Твиттер</span></a>
+        <a class="social__link" href="#"><span class="visually-hidden">Твиттер</span>
+          <svg class="social__twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="20" viewBox="0 0 23 20">
+            <image id="twitter.svg" width="23" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAUCAYAAABmvqYOAAABzklEQVQ4ja1U7VECQQx9OvzXDnJuA2oFSgVqBUIFSgVIBWAFSAViBUAFagMnW4F0oPOYFyYeJwhjZu52Nsm+fAf/Tclswo+wh46dzM6S2RfPXewls2M/k9kzgEsAI/IaQe9W5zCZNcucFxvA7gHcAXBgHgu/A3jj7yA8epXCpYQ3Zc7zCjCjmkiP3k0lIr8rcMoeiXEY3lJhBqANoADwkcweYtgCHgM4BzAX4LzMeUBnhHMs/nMEp8UreXOis+tGFNGizLmtlJ2Kd83HZc5TT4dH3pBXhcCX4REAQDOZ8WFfRhDSQLBOMptFHoAXyc5jQQt9DLkTAHgfJ7OWohrFGkhepfVuS2YM/9NzvA8lM3balz+NOe+pGP09gelxK/JW4GXOT+qA1j7D5IVVan+Ca2QLXQcytAv5EI7WwAPY2Kv+V1JXFer5dc/VJWOFxyhY3Ptt+GqAoa7tKIs554DcaPoGlWg20USNMNAgrSgOUaGJu/BprAxInddD9fWUQ1WVN9jbYZtBoOyc3m+bMQC3pN+u02koz96fBO1sAWVUBF4WsG57Oi1XrhbTaj8rHTTwHnSPVGxvVzrlS6yW4j4nMCPgtvP81xENM2Ub6wEA3za6sTa7863jAAAAAElFTkSuQmCC"/>
+          </svg>
+          <svg class="social__twitter--blue" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="20" viewBox="0 0 23 20">
+            <image id="twitter.svg_copy" data-name="twitter.svg copy" width="23" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAUCAYAAABmvqYOAAABoElEQVQ4ja1V21ECQRBsKf8lA84IhAiEH3/lIhAiUCIAIgAiABKQM4I7MtAI1AggA62u6qGmxuVl0VXnULuzvT2v9eph/YoLoxRdp+Z4mwB+ZM9BXb60KwBtAEsuePIn2bk7kAL3RgA2EmP2E0BX/u/8c+0O88ZKlqHlAL4CeVN7WwAz+dv6UL+3uiSLaVkD6HNDSkYhbBIXAFoiGUrAVGLMj+srT07nR6m5lR26S9ry6cs2tGapqCwdsrmlJdMBC48EHR2cuJArJ2agSP3am2zLFzTTV+iQoVAUff2ehRoUEhXrAl/QSrlrB0fDQt8xNPy+z/lYxZicQJICFff2kS+kvvfPYbLCFinyUnmHWiv2+DHYEC5T5EZWuKqfozoTR1L5QBtdRcGxfjmBuK4nA+qqHeIQ5erRaYjmEEpdMA09Dz9EmVrx3k1jdYR4rsJXYT525JvwCm7VOePEgETinnsS/qDmCyBSm8h9KWFUfG9ITB8+E0lfKifRN4BnHeDHMKnow/neuK4gKMoesST8vzmmhsR3Lv8p8GKm7HA9APwC4+ht+jjUF1YAAAAASUVORK5CYII="/>
+          </svg>
+        </a>
       </li>
     </ul>
     <a class="coopyright coopyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-      <img class="coopyright__img" src="" width="27" height="35" alt="Логотип HTMLAcademy" aria-label="Логотип HTMLAcademy">
+      <p class="coopyright__text">Разработано</p>
+      <svg class="coopyright__img" aria-label="Логотип HTMLAcademy" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><path fill="#63d1bb" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
     </a>
   </footer>
   <section class="cart-modal">
     <div class="order">
-      <h2 class="order__title">Добавить в корзину</h2>
+      <h2 class="order__title">Добавить<br> в корзину</h2>
       <form class="order__checkpoint" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
           <legend class="order__legend">Выберите размер:</legend>
@@ -132,8 +171,10 @@
         </fieldset>
         <button class="order__button button button--modal" type="submit"><span>Добавить</span></button>
       </form>
+      <div class="order__overlay"></div>
     </div>
   </section>
+  <script src="js/script-index.js"></script>
 </body>
 
 </html>
