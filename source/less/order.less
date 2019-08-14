@@ -2,9 +2,8 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  margin-top: -168px;
-  margin-left: -160px;
-  z-index: 2;
+  transform: translate(-160px, -168px);
+  z-index: 3;
   width: 320px;
   min-height: 336px;
   box-shadow: 0px 5px 10px 0 rgba(0, 1, 1, 0.25);
@@ -13,7 +12,7 @@
 
 }
 .order__title {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: @OpenSans;
   font-size: 25px;
   font-weight: bold;
   font-style: normal;
@@ -22,6 +21,7 @@
   letter-spacing: normal;
   color: #000000;
   text-transform: uppercase;
+  width: 148px;
   padding-top: 35px;
   padding-left: 89px;
   margin: 0;
@@ -34,7 +34,7 @@
   }
 }
 .order__legend {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: @OpenSans;
   font-size: 15px;
   font-weight: normal;
   font-style: normal;
@@ -59,7 +59,7 @@
 }
 .order__button {
   display: block;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: @OpenSans;
   font-size: 17px;
   font-weight: bold;
   font-style: normal;
@@ -84,5 +84,5 @@
 
   background-color: #ffffff;
   opacity: 0.9;
-  z-index: -1;
+  z-index: 2;
 }

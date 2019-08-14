@@ -1,6 +1,6 @@
 .card__title {
   margin: 0;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: @OpenSans;
   font-size: 17px;
   font-weight: bold;
   font-style: normal;
@@ -18,9 +18,7 @@
   border-left: solid 1px #ececec;
   border-right: solid 1px #ececec;
 }
-.card__order-1,
-.card__order-2,
-.card__order-3 {
+.card__order {
   padding-bottom: 25px;
   cursor: pointer;
   &:hover,
@@ -42,26 +40,19 @@
     opacity: 0.3;
   }
   &:active .card__price {
-    background: url(../img/cart-blue-0.3.png) no-repeat 204px 25px;
+    background: url(../img/cart-blue-03.png) no-repeat 204px 25px;
   }
-}
-.item-back-copy {
-  width: 316px;
-  height: 197px;
-  box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1);
-  border: solid 1px #ececec;
-  background-color: var(--white);
 }
 .card__ending {
   margin-left: 28px;
   width: 204px;
   border-bottom: solid 1px #ececec;
 }
-.property {
+.card__property {
   margin: 0;
   padding-top: 17px;
   padding-bottom: 27px;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: @OpenSans;
   font-size: 13px;
   font-weight: normal;
   font-style: normal;
@@ -75,8 +66,8 @@
   margin: 0;
   padding-left: 28px;
   padding-top: 25px;
-  background: url(../img/cart0.2.png) no-repeat 204px 25px;
-  font-family: "Open Sans", Arial, sans-serif;
+  background: url(../img/cart-02.png) no-repeat 204px 25px;
+  font-family: @OpenSans;
   font-size: 15px;
   font-weight: bold;
   font-style: normal;

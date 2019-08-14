@@ -1,10 +1,10 @@
-var BtnMenu = document.querySelector(".main-nav__button");
-var Menu = document.querySelector(".main-nav__list");
+var btnmenu = document.querySelector(".main-nav__button");
+var menu = document.querySelector(".main-nav__list");
 
 
-BtnMenu.addEventListener("click", function(evt) {
+btnmenu.addEventListener("click", function(evt) {
   evt.preventDefault();
-  Menu.classList.toggle("main-nav__list--show");
-  BtnMenu.classList.toggle("main-nav__button--close");
-  BtnMenu.focus();
+  menu.classList.toggle("main-nav__list--show");
+  btnmenu.classList.toggle("main-nav__button--close");
+  btnmenu.focus();
 });
