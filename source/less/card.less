@@ -1,0 +1,96 @@
+@cart-blue: ../img/cart-blue.png;
+@cart-blue-03: ../img/cart-blue-03.png;
+@cart-02: ../img/cart-02.png;
+
+.card__title {
+  margin: 0;
+  font-family: @OpenSans;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.41;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  padding-top: 20px;
+}
+
+.card__wrap {
+  width: 260px;
+  box-sizing: border-box;
+  border-bottom: solid 1px #ececec;
+  border-left: solid 1px #ececec;
+  border-right: solid 1px #ececec;
+}
+
+.card__order {
+  padding-bottom: 25px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:hover .card__title,
+  &:focus .card__title {
+    opacity: 0.6;
+  }
+
+  &:hover .card__price,
+  &:focus .card__price {
+    background: url(@cart-blue) no-repeat 204px 25px;
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active .card__title {
+    opacity: 0.3;
+  }
+
+  &:active .card__price {
+    background: url(@cart-blue-03) no-repeat 204px 25px;
+  }
+}
+
+.card__ending {
+  margin-left: 28px;
+  width: 204px;
+  border-bottom: solid 1px #ececec;
+}
+
+.card__property {
+  display: block;
+  margin: 0;
+  padding-top: 17px;
+  padding-bottom: 27px;
+  font-family: @OpenSans;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.31;
+  letter-spacing: normal;
+  text-align: left;
+  color: #444444;
+}
+
+.card__price {
+  display: block;
+  margin: 0;
+  padding-left: 28px;
+  padding-top: 25px;
+  background: url(@cart-02) no-repeat 204px 25px;
+  font-family: @OpenSans;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
