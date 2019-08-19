@@ -1,0 +1,118 @@
+.shop {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.shop__wrap {
+  min-height: 285px;
+  background: url("../img/hero-mobile.png") no-repeat 0 -17px;
+}
+
+.shop__title {
+  font-family: @OpenSans;
+  font-size: 27px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.11;
+  letter-spacing: normal;
+  text-align: center;
+  color: #010000;
+  display: block;
+  width: 244px;
+  margin: 0;
+  padding-top: 76px;
+  padding-left: 8px;
+}
+
+.shop__link-interior {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  min-height: 103px;
+  background-color: #63d1bb;
+
+  img {
+    padding-top: 23px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    min-height: 108px;
+    padding-bottom: 5px;
+  }
+
+  &:hover img,
+  &:focus img,
+  &:active img {
+    padding-top: 18px;
+  }
+
+  &:hover .shop__text,
+  &:focus .shop__text,
+  &:active .shop__text {
+    padding-top: 25px;
+  }
+
+  &:active .shop__text {
+    opacity: 0.3;
+  }
+}
+
+.shop__link-toys {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  min-height: 103px;
+  background-color: #56c3b2;
+
+  img {
+    padding-top: 21px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    min-height: 108px;
+    padding-bottom: 5px;
+  }
+
+  &:hover img,
+  &:focus img,
+  &:active img {
+    padding-top: 16px;
+  }
+
+  &:hover .shop__text,
+  &:focus .shop__text,
+  &:active .shop__text {
+    padding-top: 25px;
+  }
+
+  &:active .shop__text {
+    opacity: 0.3;
+  }
+}
+
+.shop__text {
+  display: block;
+  width: 106px;
+  font-family: @OpenSans;
+  font-size: 19px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.26;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  padding-top: 30px;
+}
