@@ -20,3 +20,35 @@
   margin: 0;
   padding: 0;
 }
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    width: @tablet-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+    min-height: 143px;
+  }
+
+  .page-footer::before {
+    content: "";
+    display: none;
+  }
+
+  .page-footer__logo {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: @desktop-width;
+  }
+}

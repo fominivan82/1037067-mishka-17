@@ -19,10 +19,7 @@
   font-family: @OpenSans;
   font-size: 27px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.11;
-  letter-spacing: normal;
   text-align: center;
   color: #010000;
   display: block;
@@ -34,16 +31,16 @@
 
 .shop__link-interior {
   display: flex;
-  flex-direction: row-reverse;
   justify-content: space-between;
   min-height: 103px;
   background-color: #63d1bb;
 
   img {
     padding-top: 23px;
+    opacity: 0.5;
   }
 
-  &:hover,
+  /** перекинуть в десктопную версию &:hover,
   &:focus,
   &:active {
     min-height: 108px;
@@ -64,21 +61,21 @@
 
   &:active .shop__text {
     opacity: 0.3;
-  }
+  }**/
 }
 
 .shop__link-toys {
   display: flex;
-  flex-direction: row-reverse;
   justify-content: space-between;
   min-height: 103px;
   background-color: #56c3b2;
 
   img {
     padding-top: 21px;
+    opacity: 0.5;
   }
 
-  &:hover,
+  /** перекинуть в десктопную версию &:hover,
   &:focus,
   &:active {
     min-height: 108px;
@@ -99,7 +96,7 @@
 
   &:active .shop__text {
     opacity: 0.3;
-  }
+  }**/
 }
 
 .shop__text {
@@ -115,4 +112,64 @@
   text-align: left;
   color: #ffffff;
   padding-top: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .shop {
+    background: url("../img/hero-tablet@1x.jpg") no-repeat center center;
+    min-height: 736px;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    margin-bottom: 20px;
+    border-top: solid 1px #ececec;
+  }
+
+  .shop::after {
+    position: absolute;
+    top: 723px;
+    left: 25px;
+    content: url("../img/bg-zigzag-fill.svg");
+    z-index: 10;
+  }
+  .shop__wrap {
+    background: transparent;
+    min-height: 620px;
+  }
+
+  .shop__menu {
+    display: flex;
+    position: relative;
+  }
+
+  .shop__item {
+    flex-grow: 5;
+  }
+
+  .shop__title {
+    width: 494px;
+    padding-top: 160px;
+    text-align: center;
+    margin: auto;
+    font-size: 43px;
+    line-height: 1.16;
+    white-space: nowrap;
+  }
+
+  .shop__link-toys,
+  .shop__link-interior {
+    min-height: 119px;
+    padding-left: 36px;
+    padding-right: 36px;
+    img {
+      padding-top: 0;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .shop {
+    background: url("../img/hero-desktop@1x.jpg") no-repeat center center;
+    min-height: 746px;
+  }
 }

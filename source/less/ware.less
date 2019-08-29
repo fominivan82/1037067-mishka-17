@@ -2,10 +2,7 @@
   font-family: @OpenSans;
   font-size: 25px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.2;
-  letter-spacing: normal;
   text-align: left;
   color: #000000;
   margin: 0;
@@ -17,10 +14,7 @@
   font-family: @OpenSans;
   font-size: 17px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.18;
-  letter-spacing: normal;
   text-align: left;
   color: #63d1bb;
   text-transform: uppercase;
@@ -30,14 +24,9 @@
 
 .ware__refinement {
   width: 249px;
-  height: 63px;
   font-family: @OpenSans;
   font-size: 15px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.6;
-  letter-spacing: normal;
   text-align: left;
   color: #444444;
   margin: 0;
@@ -45,6 +34,7 @@
 }
 
 .ware__table {
+  width: 260px;
   margin: 0;
   padding-top: 33px;
 }
@@ -54,26 +44,12 @@
 }
 
 .ware__label {
-  display: block;
   border-bottom: 1px solid #ececec;
 }
 
 .ware__value {
   box-sizing: border-box;
-  display: block;
   border-bottom: 1px solid #ececec;
-  width: 260px;
-  min-height: 41px;
-  padding: 0;
-  padding-top: 7px;
-}
-
-.ware__value::before {
-  content: attr(data-label);
-  float: left;
-  width: 100px;
-  min-height: 41px;
-  padding: 0;
 }
 
 .ware__image {
@@ -87,10 +63,7 @@
   font-family: @OpenSans;
   font-size: 17px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.41;
-  letter-spacing: normal;
   text-align: center;
   color: #444444;
   margin: 0;
@@ -99,7 +72,9 @@
 }
 
 .ware__link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   width: 260px;
   min-height: 52px;
@@ -108,24 +83,13 @@
   margin-top: 28px;
   margin-bottom: 36px;
   text-decoration: none;
-
-  span {
-    display: block;
-    width: 90px;
-    min-height: 12px;
-    font-family: @OpenSans;
-    font-size: 17px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.18;
-    letter-spacing: normal;
-    text-align: center;
-    text-transform: uppercase;
-    color: #444444;
-    margin: auto;
-    margin-top: 16px;
-  }
+  font-family: @OpenSans;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.18;
+  text-align: center;
+  text-transform: uppercase;
+  color: #444444;
 
   &:hover,
   &:focus {
@@ -140,5 +104,131 @@
 
   &:active span {
     opacity: 0.3;
+  }
+}
+@media (min-width: @tablet-width) {
+  .ware {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+  }
+
+  .ware::after {
+    position: absolute;
+    top: 105px;
+    left: 384px;
+    content: url("../img/triple-set-tablet@1x.jpg");
+  }
+
+  .ware__image {
+    display: none;
+  }
+
+  .ware__title {
+    flex-basis: 420px;
+    font-size: 42px;
+  }
+
+  .ware__title-week {
+    flex-basis: 70px;
+    font-size: 17px;
+    padding-left: 150px;
+    padding-top: 35px
+  }
+
+  .ware__refinement {
+    flex-basis: 668px;
+    font-size: 17px;
+    padding-right: 387px;
+  }
+
+  .ware__table {
+    flex-basis: 668px;
+    padding-right: 387px;
+    padding-top: 50px;
+  }
+
+  .ware__price {
+    font-size: 20px;
+    line-height: 1.2;
+    flex-basis: 668px;
+    padding-right: 387px;
+    padding-left: 0;
+    padding-top: 60px;
+  }
+
+  .ware__link {
+    width: 292px;
+    min-height: 52px;
+    margin-top: 34px;
+    margin-bottom: 52px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .ware {
+    padding-left: 225px;
+    padding-right: 50px;
+    position: relative;
+    min-height: 709px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .ware::after {
+    top: 0px;
+    left: 625px;
+    content: url("../img/triple-set-desktop@1x.jpg");
+    z-index: -1;
+  }
+
+  .ware__title {
+    flex-basis: auto;
+    font-size: 53px;
+    padding-top: 63px;
+  }
+
+  .ware__title-week {
+    position: absolute;
+    width: 70px;
+    font-size: 17px;
+    padding: 0;
+    top: 75px;
+    left: 97px;
+    text-align: center;
+  }
+
+  .ware__refinement {
+    flex-basis: auto;
+    padding: 0;
+    width: 292px;
+    font-size: 17px;
+    padding-top: 52px;
+  }
+
+  .ware__table {
+    flex-basis: auto;
+    padding: 0;
+    width: 292px;
+    padding-top: 66px;
+  }
+
+  .ware__price {
+    flex-basis: auto;
+    padding: 0;
+    font-size: 20px;
+    line-height: 1.2;
+    width: 292px;
+    padding-left: 0;
+    padding-top: 110px;
+  }
+
+  .ware__link {
+    width: 292px;
+    min-height: 52px;
+    margin-top: 34px;
+    margin-bottom: 52px;
   }
 }

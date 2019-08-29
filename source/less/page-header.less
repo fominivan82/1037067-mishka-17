@@ -1,13 +1,23 @@
-
 .page-header {
   font-family: @OpenSans;
   font-size: 17px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.41;
-  letter-spacing: normal;
   display: block;
   text-align: left;
   color: #000000;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    width: @tablet-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    width: @desktop-width;
+  }
 }

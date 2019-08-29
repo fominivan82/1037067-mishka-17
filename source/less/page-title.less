@@ -1,18 +1,43 @@
 .page-title {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   min-height: 177px;
   background-color: #f1f1f1;
   font-family: @OpenSans;
   font-size: 27px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.11;
-  letter-spacing: normal;
   color: #000000;
-  padding-top: 76px;
-  padding-left: 42px;
   margin-top: 0;
   margin-bottom: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-title {
+    min-height: 226px;
+    position: relative;
+  }
+
+  .page-title::after {
+    position: absolute;
+    top: 210px;
+    left: 25px;
+    content: url("../img/bg-zigzag-fill.svg");
+    z-index: 10;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-title {
+    min-height: 255px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position: 0 234px;
+    }
+
+  .page-title::after {
+    display: none;
+  }
 }
