@@ -1,0 +1,138 @@
+.product-color {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-color__legend {
+  padding: 0;
+}
+
+.product-color__legend-text {
+  text-transform: uppercase;
+  font-family: @OpenSans;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 0.94;
+  text-align: left;
+  color: #63d1bb;
+  display: block;
+  margin-top: 22px;
+  margin-bottom: 36px;
+  width: 100%;
+  position: relative;
+}
+
+.product-color__legend-text::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 62px;
+  height: 1px;
+  width: 198px;
+  background-color: #63d1bb;
+}
+
+.product-color__text {
+  font-family: @OpenSans;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.06;
+  text-align: left;
+  color: #000000;
+  display: block;
+  min-height: 40px;
+  padding-bottom: 21px;
+  padding-left: 63px;
+}
+
+.product-color__label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.product-color__check + .product-color__text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 36px;
+  height: 36px;
+  border: solid 2px #444444;
+}
+
+.product-color__check:checked + .product-color__text::before {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 0;
+  transform: rotate(-45deg);
+  width: 20px;
+  height: 9px;
+  border-left: 2px solid #444444;
+  border-bottom: 2px solid #444444;
+}
+
+@media (min-width: @tablet-width) {
+  .product-color__legend-text::after {
+    display: none;
+  }
+
+  .product-color__wrap {
+    display: flex;
+    padding-top: 45px;
+  }
+
+  .product-color__legend-text {
+    margin-left: 3px;
+  }
+
+  .product-color__wrap-chek {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 33px;
+    padding-left: 121px;
+    padding-top: 5px;
+    padding-bottom: 26px;
+  }
+
+  .product-color__text {
+    font-size: 19px;
+    line-height: 0.95;
+    min-height: 40px;
+    padding-left: 80px;
+    padding-top: 15px;
+    min-width: 205px;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 22px;
+  }
+
+  .product-color__check + .product-color__text::after {
+    left: 0;
+    top: 0px;
+    width: 50px;
+    height: 48px;
+  }
+
+  .product-color__check:checked + .product-color__text::before {
+    left: 12px;
+    top: 14px;
+    width: 28px;
+    height: 14px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-color__legend-text {
+    margin-left: 0;
+  }
+
+  .product-color__wrap-chek {
+    padding-left: 70px;
+    padding-right: 0;
+  }
+}

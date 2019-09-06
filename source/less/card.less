@@ -4,6 +4,7 @@
   border-bottom: solid 1px #ececec;
   border-left: solid 1px #ececec;
   border-right: solid 1px #ececec;
+  margin-top: 30px;
 }
 
 .card__title {
@@ -11,17 +12,14 @@
   font-family: @OpenSans;
   font-size: 17px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.41;
-  letter-spacing: normal;
   text-align: left;
   color: #000000;
-  padding-top: 20px;
+  padding-top: 22px;
 }
 
 .card__order {
-  padding-bottom: 25px;
+  padding-bottom: 30px;
   cursor: pointer;
 
   &:hover,
@@ -61,8 +59,8 @@
 .card__property {
   display: block;
   margin: 0;
-  padding-top: 17px;
-  padding-bottom: 27px;
+  padding-top: 6px;
+  padding-bottom: 19px;
   font-family: @OpenSans;
   font-size: 13px;
   line-height: 2.31;
@@ -74,8 +72,8 @@
   display: block;
   margin: 0;
   padding-left: 28px;
-  padding-top: 25px;
-  background: url("../img/cart-02.png") no-repeat 204px 25px;
+  padding-top: 20px;
+  background: url("../img/cart-02.png") no-repeat 212px 23px;
   font-family: @OpenSans;
   font-size: 15px;
   font-weight: bold;
@@ -85,19 +83,16 @@
   color: #000000;
 }
 
-.card__image--tablet {
-  display: none;
-}
-
-.card__image--desktop {
-  display: none;
-}
-
 @media (min-width: @tablet-width) {
   .card {
     display: flex;
     width: auto;
-    margin-bottom: 54px;
+    margin-bottom: 0;
+    margin-top: 54px;
+
+    picture {
+      height: 334px;
+    }
   }
 
   .card__ending {
@@ -111,64 +106,101 @@
     justify-content: space-between;
     flex-grow: 1;
     border-top: solid 1px #ececec;
+    padding-bottom: 25px;
   }
 
   .card__title {
     font-size: 20px;
+    line-height: 1.2;
+    width: 304px;
   }
 
   .card__property {
+    padding: 0;
     font-size: 15px;
-  }
-
-  .card__image {
-    display: none;
-  }
-
-  .card__image--tablet {
-    display: block;
+    padding-top: 5px;
   }
 
   .card__price {
     font-size: 17px;
     margin-left: 33px;
     margin-right: 33px;
-    padding-top: 25px;
+    padding-top: 21px;
     padding-left: 0;
-    background-position: 240px 25px;
+    background-position: 247px 24px;
     border-top: solid 1px #ececec;
+  }
+
+  .card--bowl {
+    .card__property{
+      padding-top: 8px;
+    }
+  }
+
+  .card--toys {
+    .card__price {
+      margin-left: 30px;
+    }
+
+    .card__order {
+      padding-bottom: 28px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .card {
-    display: block;
-  }
-
-  .card__image--tablet {
-    display: none;
-  }
-
-  .card__image--desktop {
-    display: block;
-  }
-
-  .card__ending {
-    min-height: 123px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+    margin-bottom: 0;
+    margin-top: 54px;
   }
 
   .card__title {
-    flex-shrink: 1;
-    padding-top: 29px;
+    padding-top: 25px;
     width: 286px;
   }
 
   .card__property {
-    padding-top: 5px;
+    padding-top: 3px;
     padding-bottom: 0;
   }
 
   .card__price {
-    background-position: 204px 25px;
+    background-position: 237px 24px;
+    margin-left: 27px;
+    margin-right: 33px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+
+  .card__order {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 125px;
+    padding-bottom: 0;
+  }
+
+  .card__ending {
+    padding-bottom: 13px;
+  }
+
+  .card--bowl {
+    .card__property{
+      padding-top: 3px;
+    }
+  }
+
+  .card--toys {
+    .card__price {
+      margin-left: 30px;
+    }
+
+    .card__order {
+      padding-bottom: 0;
+    }
   }
 }

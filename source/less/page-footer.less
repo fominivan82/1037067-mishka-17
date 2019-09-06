@@ -8,8 +8,9 @@
 .page-footer::before {
   content: "";
   position: absolute;
-  left: 30px;
-  top: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-130px, 0);
   width: 260px;
   height: 1px;
   background: #e5e5e5;
@@ -27,6 +28,10 @@
 
 @media (min-width: @tablet-width) {
   .page-footer {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .page-footer__wrap {
     width: @tablet-width;
     margin-left: auto;
     margin-right: auto;
@@ -48,7 +53,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-footer {
+  .page-footer__wrap {
     width: @desktop-width;
   }
 }

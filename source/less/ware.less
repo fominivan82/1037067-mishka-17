@@ -6,8 +6,8 @@
   text-align: left;
   color: #000000;
   margin: 0;
-  padding-top: 30px;
-  padding-left: 2px;
+  padding-top: 27px;
+  padding-left: 1px;
 }
 
 .ware__title-week {
@@ -19,7 +19,7 @@
   color: #63d1bb;
   text-transform: uppercase;
   margin: 0;
-  padding-top: 10px;
+  padding-top: 6px;
 }
 
 .ware__refinement {
@@ -30,13 +30,13 @@
   text-align: left;
   color: #444444;
   margin: 0;
-  padding-top: 25px;
+  padding-top: 22px;
 }
 
 .ware__table {
   width: 260px;
   margin: 0;
-  padding-top: 33px;
+  padding-top: 18px;
 }
 
 .ware__labels {
@@ -50,10 +50,14 @@
 .ware__value {
   box-sizing: border-box;
   border-bottom: 1px solid #ececec;
+  min-width: 79px;
+  padding: 0;
+  padding-top: 5px;
+  padding-bottom: 8px;
 }
 
 .ware__image {
-  padding-top: 28px;
+  padding-top: 26px;
 }
 
 .ware__price {
@@ -67,8 +71,8 @@
   text-align: center;
   color: #444444;
   margin: 0;
-  padding-left: 67px;
-  padding-top: 25px;
+  padding-left: 66px;
+  padding-top: 19px;
 }
 
 .ware__link {
@@ -80,7 +84,7 @@
   min-height: 52px;
   border: solid 2px #444444;
   background-color: #ffffff;
-  margin-top: 28px;
+  margin-top: 26px;
   margin-bottom: 36px;
   text-decoration: none;
   font-family: @OpenSans;
@@ -116,48 +120,58 @@
     position: relative;
   }
 
-  .ware::after {
-    position: absolute;
-    top: 105px;
-    left: 384px;
-    content: url("../img/triple-set-tablet@1x.jpg");
-  }
-
   .ware__image {
-    display: none;
+    position: absolute;
+    top: 106px;
+    left: 384px;
   }
 
   .ware__title {
-    flex-basis: 420px;
-    font-size: 42px;
+    width: 430px;
+    font-size: 43px;
+    line-height: 1.6;
+    text-align: left;
+    padding: 0;
+    padding-top: 16px;
+
   }
 
   .ware__title-week {
     flex-basis: 70px;
     font-size: 17px;
-    padding-left: 150px;
-    padding-top: 35px;
+    line-height: 1;
+    text-align: center;
+    padding-left: 139px;
+    padding-top: 37px;
   }
 
   .ware__refinement {
     flex-basis: 668px;
     font-size: 17px;
+    line-height: 1.76;
     padding-right: 387px;
+    padding-top: 40px;
   }
 
   .ware__table {
     flex-basis: 668px;
     padding-right: 387px;
-    padding-top: 50px;
+    padding-top: 39px;
+  }
+
+  .ware__value {
+    min-width: 69px;
+    padding-top: 5px;
+    padding-bottom: 10px;
   }
 
   .ware__price {
     font-size: 20px;
+    width: 292px;
     line-height: 1.2;
-    flex-basis: 668px;
     padding-right: 387px;
-    padding-left: 0;
-    padding-top: 60px;
+    padding-left: 10px;
+    padding-top: 53px;
   }
 
   .ware__link {
@@ -170,7 +184,7 @@
 
 @media (min-width: @desktop-width) {
   .ware {
-    padding-left: 225px;
+    padding-left: 220px;
     padding-right: 50px;
     position: relative;
     min-height: 709px;
@@ -178,17 +192,17 @@
     flex-direction: column;
   }
 
-  .ware::after {
-    top: 0;
-    left: 625px;
-    content: url("../img/triple-set-desktop@1x.jpg");
+  .ware__image {
+    top: 22px;
+    left: 575px;
     z-index: -1;
   }
 
   .ware__title {
-    flex-basis: auto;
+    width: 600px;
     font-size: 53px;
-    padding-top: 63px;
+    padding-top: 88px;
+    padding-left: 1px;
   }
 
   .ware__title-week {
@@ -196,7 +210,7 @@
     width: 70px;
     font-size: 17px;
     padding: 0;
-    top: 75px;
+    top: 116px;
     left: 97px;
     text-align: center;
   }
@@ -206,30 +220,31 @@
     padding: 0;
     width: 292px;
     font-size: 17px;
-    padding-top: 52px;
+    padding-top: 34px;
+    padding-left: 5px;
   }
 
   .ware__table {
-    flex-basis: auto;
     padding: 0;
     width: 292px;
-    padding-top: 66px;
+    padding-top: 51px;
+    padding-left: 3px;
   }
 
   .ware__price {
-    flex-basis: auto;
     padding: 0;
     font-size: 20px;
     line-height: 1.2;
     width: 292px;
-    padding-left: 0;
-    padding-top: 110px;
+    padding-left: 5px;
+    padding-top: 104px;
   }
 
   .ware__link {
     width: 292px;
     min-height: 52px;
-    margin-top: 34px;
-    margin-bottom: 52px;
+    margin-top: 35px;
+    margin-bottom: 73px;
+    margin-left: 5px;
   }
 }

@@ -11,7 +11,7 @@
 }
 
 .shop__wrap {
-  min-height: 285px;
+  min-height: 283px;
   background: url("../img/hero-mobile.png") no-repeat 0 -17px;
 }
 
@@ -25,8 +25,8 @@
   display: block;
   width: 244px;
   margin: 0;
-  padding-top: 76px;
-  padding-left: 8px;
+  padding-top: 71px;
+  padding-left: 7px;
 }
 
 .shop__link-interior {
@@ -36,7 +36,8 @@
   background-color: #63d1bb;
 
   img {
-    padding-top: 23px;
+    padding-top: 5px;
+    padding-right: 6px;
     opacity: 0.5;
   }
 
@@ -71,7 +72,6 @@
   background-color: #56c3b2;
 
   img {
-    padding-top: 21px;
     opacity: 0.5;
   }
 
@@ -111,7 +111,7 @@
   letter-spacing: normal;
   text-align: left;
   color: #ffffff;
-  padding-top: 30px;
+  padding-top: 26px;
 }
 
 @media (min-width: @tablet-width) {
@@ -127,7 +127,7 @@
 
   .shop::after {
     position: absolute;
-    top: 723px;
+    top: 728px;
     left: 25px;
     content: url("../img/bg-zigzag-fill.svg");
     z-index: 10;
@@ -135,7 +135,7 @@
 
   .shop__wrap {
     background: transparent;
-    min-height: 620px;
+    min-height: 624px;
   }
 
   .shop__menu {
@@ -147,9 +147,19 @@
     flex-grow: 5;
   }
 
+  .shop__text {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    padding-top: 28px;
+  }
+
   .shop__title {
     width: 494px;
-    padding-top: 160px;
+    padding-top: 153px;
+    padding-left: 0;
     text-align: center;
     margin: auto;
     font-size: 43px;
@@ -157,14 +167,29 @@
     white-space: nowrap;
   }
 
-  .shop__link-toys,
+  .shop__link-toys {
+    min-height: 119px;
+    padding-left: 36px;
+    padding-right: 36px;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 31px;
+      left: 240px;
+    }
+  }
+
   .shop__link-interior {
     min-height: 119px;
     padding-left: 36px;
     padding-right: 36px;
+    position: relative;
 
     img {
-      padding-top: 0;
+      position: absolute;
+      top: 25px;
+      left: 257px;
     }
   }
 }
@@ -173,5 +198,28 @@
   .shop {
     background: url("../img/hero-desktop@1x.jpg") no-repeat center center;
     min-height: 746px;
+  }
+
+  .shop__title {
+    font-size: 53px;
+    font-weight: bold;
+    line-height: 1.08;
+    text-align: center;
+    color: #000000;
+    width: 605px;
+  }
+
+  .shop__link-toys {
+
+    img {
+      left: 430px;
+    }
+  }
+
+  .shop__link-interior {
+
+    img {
+      left: 448px;
+    }
   }
 }

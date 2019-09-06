@@ -1,9 +1,10 @@
-.page-title {
+.form-title {
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   min-height: 177px;
+  padding-bottom: 6px;
   font-family: @OpenSans;
   font-size: 27px;
   font-weight: bold;
@@ -13,12 +14,12 @@
   margin-bottom: 0;
 }
 
-.page-title__wrap {
+.form-title__wrap {
   background-color: #f1f1f1;
 }
 
 @media (min-width: @tablet-width) {
-  .page-title {
+  .form-title {
     min-height: 226px;
     position: relative;
     font-size: 43px;
@@ -27,7 +28,7 @@
     padding-left: 2px;
   }
 
-  .page-title::after {
+  .form-title::after {
     position: absolute;
     top: 200px;
     content: url("../img/bg-zigzag-fill.svg");
@@ -36,7 +37,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-title {
+  .form-title {
     min-height: 255px;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
@@ -48,7 +49,7 @@
     padding-left: 5px;
   }
 
-  .page-title::after {
+  .form-title::after {
     display: none;
   }
 }
