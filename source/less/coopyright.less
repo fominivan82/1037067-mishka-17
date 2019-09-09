@@ -4,16 +4,18 @@
   min-height: 34px;
   justify-content: space-between;
   margin-left: 39px;
-  margin-top: 30px;
+  margin-top: 28px;
   align-items: center;
 }
 
 .coopyright__link {
   text-decoration: none;
 
-  &:hover path,
-  &:focus path {
-    fill: #46c1ae;
+  &:hover,
+  &:focus {
+    svg {
+      fill: #46c1ae;
+    }
   }
 
   &:active {
@@ -36,6 +38,7 @@
 
 .coopyright__img {
   margin-left: 25px;
+  fill: #63d1bb;
 }
 
 @media (min-width: @tablet-width) {

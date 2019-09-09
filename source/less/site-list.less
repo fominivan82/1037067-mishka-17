@@ -23,23 +23,33 @@
   min-height: 79px;
   box-shadow: inset 0 1px 0 0 #ececec;
   position: relative;
-  padding-top: 32px;
+  padding-top: 28px;
   padding-left: 76px;
 
-  &:hover span,
-  &:focus span {
+  &:hover,
+  &:focus {
     opacity: 0.6;
+
+    .site-list__image {
+      fill: #63d1bb;
+      opacity: 1;
+    }
   }
 
   &:active {
     opacity: 0.3;
+
+    .site-list__image {
+      fill: #63d1bb;
+      opacity: 0.3;
+    }
   }
 }
 
 .site-list__image {
   position: absolute;
   top: 31px;
-  left: 0;
+  left: 32px;
   opacity: 0.2;
 }
 

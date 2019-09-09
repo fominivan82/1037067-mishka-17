@@ -19,7 +19,7 @@
   display: block;
   width: 100%;
   position: relative;
-  margin-bottom: 9px;
+  margin-bottom: 30px;
 }
 
 .name-block__legend-text::after {
@@ -56,6 +56,12 @@
   line-height: 1.06;
   background-color: transparent;
   outline: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-bottom-color: #62d1ba;
+  }
 }
 
 @media (min-width: @tablet-width) {

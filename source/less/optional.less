@@ -38,20 +38,28 @@
   display: block;
   box-sizing: border-box;
   padding: 15px;
-  min-height: 138px;
-  width: 256px;
-  border-width: 0;
-  opacity: 0.3;
+  min-height: 142px;
+  width: 260px;
+  border: solid 2px #000000;
   font-family: @OpenSans;
   font-size: 17px;
   line-height: 1.06;
   text-align: left;
-  color: rgba(68, 68, 68, 0.3);
+  color: #c7c7c7;
+
+  &:hover {
+    border: solid 2px #62d1ba;
+  }
+
+  &:focus,
+  &:active {
+    color: #000000;
+    border: solid 2px #62d1ba;
+  }
 }
 
 .optional__wrap {
   margin-top: 24px;
-  border: solid 2px #000000;
 }
 
 @media (min-width: @tablet-width) {
@@ -75,8 +83,8 @@
 
   .optional__input {
     padding: 13px 15px;
-    min-height: 138px;
-    width: 497px;
+    min-height: 142px;
+    width: 501px;
     font-size: 19px;
     line-height: 0.95;
   }
@@ -88,6 +96,6 @@
   }
 
   .optional__input {
-    width: 696px;
+    width: 700px;
   }
 }

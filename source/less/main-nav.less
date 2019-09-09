@@ -30,7 +30,7 @@
 
 .main-nav__button--close {
   margin-left: 67px;
-  margin-top: 10px;
+  margin-top: 7px;
   width: 21px;
   height: 21px;
   background: url("../img/icon-menu-close.svg") no-repeat;
@@ -45,8 +45,13 @@
   display: none;
 }
 
+.main-nav--nojs,
 .main-nav__list--show {
   display: block;
+}
+
+.main-nav--nojs[type] {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
