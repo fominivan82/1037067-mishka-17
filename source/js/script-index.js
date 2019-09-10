@@ -3,11 +3,11 @@ var menuTop = document.querySelector(".site-list--top");
 var menuMiddle = document.querySelector(".site-list--middle");
 var order = document.querySelector(".ware__link");
 var popup = document.querySelector(".cart-modal");
-var close = document.querySelector(".order__overlay");
+var close = document.querySelector(".overlay");
 
-btnMenu.classList.remove("main-nav--nojs");
-menuTop.classList.remove("main-nav--nojs");
-menuMiddle.classList.remove("main-nav--nojs");
+btnMenu.classList.remove("main-nav__button--nojs");
+menuTop.classList.remove("site-list--top-nojs");
+menuMiddle.classList.remove("site-list--middle-nojs");
 
 btnMenu.addEventListener("click", function(evt) {
   evt.preventDefault();

@@ -2,9 +2,9 @@ var btnMenu = document.querySelector(".main-nav__button");
 var menuTop = document.querySelector(".site-list--top");
 var menuMiddle = document.querySelector(".site-list--middle");
 
-btnMenu.classList.remove("main-nav--nojs");
-menuTop.classList.remove("main-nav--nojs");
-menuMiddle.classList.remove("main-nav--nojs");
+btnMenu.classList.remove("main-nav__button--nojs");
+menuTop.classList.remove("site-list--top-nojs");
+menuMiddle.classList.remove("site-list--middle-nojs");
 
 
 btnMenu.addEventListener("click", function(evt) {

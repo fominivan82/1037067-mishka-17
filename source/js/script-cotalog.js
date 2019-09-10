@@ -1,17 +1,16 @@
 var btnMenu = document.querySelector(".main-nav__button");
 var menuTop = document.querySelector(".site-list--top");
 var menuMiddle = document.querySelector(".site-list--middle");
-var link = document.querySelector(".card__order--hare");
-var linkBasket = document.querySelector(".card__order--basket");
-var linkBigbasket = document.querySelector(".card__order--bigbasket");
+var link = document.querySelector(".card__link-icon--hare");
+var linkBasket = document.querySelector(".card__link-icon--basket");
+var linkBigbasket = document.querySelector(".card__link-icon--bigbasket");
 var linkProduction = document.querySelector(".production__link");
-
-btnMenu.classList.remove("main-nav--nojs");
-menuTop.classList.remove("main-nav--nojs");
-menuMiddle.classList.remove("main-nav--nojs");
-
 var popup = document.querySelector(".cart-modal");
-var close = document.querySelector(".order__overlay");
+var close = document.querySelector(".overlay");
+
+btnMenu.classList.remove("main-nav__button--nojs");
+menuTop.classList.remove("site-list--top-nojs");
+menuMiddle.classList.remove("site-list--middle-nojs");
 
 btnMenu.addEventListener("click", function(evt) {
   evt.preventDefault();

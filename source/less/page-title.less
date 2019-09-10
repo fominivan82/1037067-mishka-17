@@ -1,7 +1,4 @@
-.page-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.page-title__headline {
   box-sizing: border-box;
   min-height: 177px;
   font-family: @OpenSans;
@@ -9,16 +6,21 @@
   font-weight: bold;
   line-height: 1.11;
   color: #000000;
+  padding-top: 71px;
+  padding-left: 41px;
   margin-top: 0;
+
+
   margin-bottom: 0;
+  display: block;
 }
 
-.page-title__wrap {
+.page-title {
   background-color: #f1f1f1;
 }
 
 @media (min-width: @tablet-width) {
-  .page-title {
+  .page-title__headline {
     min-height: 226px;
     position: relative;
     font-size: 43px;
@@ -27,7 +29,7 @@
     padding-left: 2px;
   }
 
-  .page-title::after {
+  .page-title__headline::after {
     position: absolute;
     top: 213px;
     width: 100%;
@@ -42,7 +44,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-title {
+  .page-title__headline{
     min-height: 255px;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
@@ -54,7 +56,7 @@
     padding-left: 5px;
   }
 
-  .page-title::after {
+  .page-title__headline::after {
     display: none;
   }
 }
