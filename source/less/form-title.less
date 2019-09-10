@@ -1,7 +1,6 @@
 .form-title__headline {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-top: 71px;
+  padding-left: 37px;
   box-sizing: border-box;
   min-height: 177px;
   padding-bottom: 6px;
@@ -20,15 +19,25 @@
 
 @media (min-width: @tablet-width) {
   .form-title__headline {
-    min-height: 226px;
-    position: relative;
     font-size: 43px;
     line-height: 1.16;
-    padding-top: 10px;
-    padding-left: 2px;
+    padding-top: 92px;
+    padding-left: 189px;
+    padding-left: 5px;
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
   }
 
-  .form-title__headline::after {
+  .form-title {
+    box-sizing: border-box;
+    min-height: 226px;
+    position: relative;
+  }
+
+  .form-title::after {
     position: absolute;
     top: 213px;
     width: 100%;
@@ -44,18 +53,21 @@
 
 @media (min-width: @desktop-width) {
   .form-title__headline {
+    font-size: 53px;
+    line-height: 1.08;
+    padding-bottom: 15px;
+    width: 500px;
+    padding-left: 10px;
+  }
+
+  .form-title {
     min-height: 255px;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     background-position: -15px 234px;
-    font-size: 53px;
-    line-height: 1.08;
-    padding-top: 0;
-    padding-bottom: 15px;
-    padding-left: 5px;
   }
 
-  .form-title__headline::after {
+  .form-title::after {
     display: none;
   }
 }
